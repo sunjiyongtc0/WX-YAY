@@ -1,0 +1,11 @@
+/* miniprogram/pages/OnlineGames/index.wxss */
+@import "../../home/home.wxss";
+.van-cell{
+  background-color: #A68AC7 !important;
+  color: #445D7C !important;
+  width: 100vw;
+}
+.van-collapse-item__content{
+  background-color:#f4c8c8 !important;
+  opacity:0.8 !important;
+}

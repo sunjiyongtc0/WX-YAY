@@ -1,0 +1,20 @@
+/* miniprogram/pages/yiy/fillmemory/index.wxss */
+@import "../../home/home.wxss";
+
+.cooltimer{
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  height:100vh;
+  width: 100vw;
+  background-color: whitesmoke;
+  opacity:0.8 !important;
+}
+.van-image{
+  position:absolute !important;
+  top: 28vh !important;
+  left: 17vw !important;
+}

@@ -1,0 +1,27 @@
+<!--miniprogram/pages/recollection/recollection.wxml-->
+<view class="bg" >
+
+ <van-col span="8" offset="6">
+     <image  class="img imgy" src="../../images/recollec/jay.jpg" bind:tap="Jay"></image>
+      <!-- <van-button round type="info" bind:tap="Jay">周杰伦</van-button> -->
+ </van-col>
+ <van-col span="8" offset="6">
+  <image  class="img imgg" src="../../images/recollec/game.jpg" bind:tap="OnlineGames"></image>
+      <!-- <van-button round type="info" bind:tap="OnlineGames">网游</van-button> -->
+ </van-col>
+  <van-col span="8" offset="6">
+     <image  class="img imgc" src="../../images/recollec/comic.jpg"  bind:tap="Comic" ></image>
+      <!-- <van-button round type="info" bind:tap="Comic">动漫</van-button> -->
+ </van-col>
+<van-col span="8" offset="6">
+ <image  class="img imgm" src="../../images/recollec/movie.jpg"  bind:tap="Movie" ></image>
+      <!-- <van-button round type="info" bind:tap="Movie">影视</van-button> -->
+</van-col>
+    <van-col span="8" offset="6">
+      <image  class="img imgmu" src="../../images/recollec/music.jpg"  bind:tap="Music" ></image>
+      <!-- <van-button round type="info" bind:tap="Music">音乐</van-button> -->
+ </van-col> 
+  <van-col span="8" offset="6">
+      <image  class="img imgrl" src="../../images/recollec/rl.jpg"  bind:tap="Rl" ></image>
+ </van-col> 
+</view>

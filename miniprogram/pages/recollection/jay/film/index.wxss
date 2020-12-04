@@ -1,0 +1,10 @@
+/* miniprogram/pages/jay/film/index.wxss */
+@import "../../../home/home.wxss";
+.van-card{
+  background-color:#f4c8c8 !important;
+  color: #445D7C !important;
+}
+.van-card__thumb{
+  display:inline-block;
+  vertical-align:middle;
+}

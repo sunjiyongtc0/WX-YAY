@@ -1,0 +1,26 @@
+<!--miniprogram/pages/Comic/index.wxml-->
+<view class="container" >
+<view class="pagebody" >
+ <view class="{{textShow?'hide':'show'}}"><text class="fo" >小时候最开心的事情莫过于作业写完了，家长允许你看电视了，而你追的动画又正好开播</text></view>
+  <van-transition show="{{ show }}"   name="slide-right"  bind:before-enter="getNow"  bind:after-leave="getNext">
+  <van-row show="{{ show }}" >
+  <van-col>   <view class="fotime" > {{comicInfo.name}}</view></van-col>
+  </van-row>
+  <scroll-view scroll-y="true" style="height: 35vh;"> 
+    <van-row show="{{ show }}">
+      <van-col>  {{comicInfo.ace}} </van-col>
+    </van-row>
+    </scroll-view>
+    <scroll-view scroll-y="true" style="height: 41vh;text-align:center;align-items: center;top:42vh;padding:2rpx; position:absolute " > 
+       <van-image
+        width="100vw"
+        height="42vh"
+        fit="cover"
+        src="{{path+comicInfo.name+'.jpg'}}"
+      />
+      </scroll-view>
+  </van-transition>
+</view>
+<van-steps steps="{{ steps }}" active="{{ index }}" />
+<van-button round type="info" bind:click="Next">{{msg}}</van-button>
+</view>

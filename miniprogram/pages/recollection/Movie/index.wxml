@@ -1,0 +1,29 @@
+<!--miniprogram/pages/Movie/index.wxml-->
+<view class="container" >
+  <view class="pagebody">
+  <view class="{{textShow?'hide':'show'}}"><text class="fo" >过去有许多火爆大街小巷的影视作品，快来看看你还记得哪些吧</text></view>
+    <van-transition show="{{ show }}"   name="costum"  bind:before-enter="getNow"  bind:after-leave="getNext">
+      <van-row show="{{ show }}" >
+        <van-col> <view class="fotime" >{{MovieInfo.name}}</view>  </van-col>
+      </van-row>
+       <scroll-view scroll-y="true" style="height: 35vh;"> 
+      <van-row show="{{ show }}">
+        <van-col>  {{MovieInfo.ace}} </van-col>
+      </van-row>
+      </scroll-view>
+      <scroll-view scroll-y="true" style="height: 41vh;text-align:center;align-items: center;top:42vh;padding:2rpx; position:absolute " > 
+       <van-image
+        width="100vw"
+        height="45vh"
+        fit="cover"
+        src="{{path+MovieInfo.name+'.jpg'}}"
+      />
+      </scroll-view>
+    </van-transition>
+  </view>
+   <view class="but">
+    <van-button round type="info" bind:click="Next">{{msg}}</van-button> 
+   </view>
+
+</view>
+

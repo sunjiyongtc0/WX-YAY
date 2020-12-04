@@ -1,0 +1,53 @@
+/* miniprogram/pages/Movie/index.wxss */
+@import "../../home/home.wxss";
+
+.pagebody{
+  width: 100vw;
+  height: 78vh;
+  color:#445D7C; 
+  /* color: #f4a44c;
+  border-color:#A68AC7; */
+}
+.fotime {
+  background-color:#fff;
+  border-radius:5rpx;
+  padding:2rpx;
+  font-size:45rpx;
+  color:#be6fff
+}
+.but{
+  position:absolute;
+  top: 90%;
+  width: 100vw;
+  height: 20vh;
+  text-align:center;
+  align-items: center;
+  padding:2rpx;
+}
+.hide{
+  display: none;
+ }
+ .show{ 
+  display: block;
+ }
+ 
+.text{
+  width: 80vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fo {
+  width: 80vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  text-align:center;
+  display: flex;
+  font-size: 12;
+  color: #f4a44c;
+  border-color:#A68AC7;
+}

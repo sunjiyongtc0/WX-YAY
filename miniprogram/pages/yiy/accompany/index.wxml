@@ -1,0 +1,14 @@
+<!--miniprogram/pages/yiy/accompany/index.wxml-->
+ <view class="container">
+    <view class='page_mid'><van-button type="info" bind:click="getOne">1</van-button> <van-button type="info"  bind:click="getTwo">2</van-button> <van-button type="info"  bind:click="getThree">3</van-button> </view>
+    <view class='page_last'>
+        <block wx:for='{{imgArr0}}' wx:key='{{index}}'>
+            <view class="photo_item {{item.isturn?'left':'right'}} {{'zindex'+item.zIndex}}" data-index='{{index}}' bindtap='change' bindtransitionend='finish'>
+                  <image  src='{{item.src}}' mode='aspectFill' indload="loadImg" ></image> 
+                   <!-- <van-image   width="100%" height="100%"  fit="cover" src="{{item.src}}" use-loading-slot  bindload="loadImg">
+                                <van-loading slot="loading" type="spinner" size="20" vertical />
+                   </van-image> -->
+            </view>
+        </block>
+    </view>
+</view>  

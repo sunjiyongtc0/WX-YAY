@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/times/times",
+    "pages/recollection/recollection",
+    "pages/recollection/jay/jay",
+    "pages/recollection/jay/sunburst/index",
+    "pages/recollection/jay/tree/index",
+    "pages/leavemsg/leavemsg",
+    "pages/recollection/jay/film/index",
+    "pages/recollection/OnlineGames/index",
+    "pages/recollection/Comic/index",
+    "pages/recollection/Movie/index",
+    "pages/recollection/Music/index",
+    "pages/yiy/greatTime/index",
+    "pages/maturity/index",
+    "pages/yiy/yiy",
+    "pages/yiy/fillmemory/index",
+    "pages/recollection/Rl/index",
+    "pages/yiy/accompany/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#A68AC7",
+    "navigationBarTitleText": "逐梦",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

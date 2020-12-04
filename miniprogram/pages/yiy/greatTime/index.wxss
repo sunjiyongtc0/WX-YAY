@@ -1,0 +1,10 @@
+/* miniprogram/pages/greatTime/index.wxss */
+@import "../../home/home.wxss";
+page {
+  height: 100%;
+}
+.container {
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 20rpx auto !important;
+}

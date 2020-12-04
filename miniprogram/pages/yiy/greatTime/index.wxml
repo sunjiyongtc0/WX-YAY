@@ -1,0 +1,3 @@
+<!--miniprogram/pages/greatTime/index.wxml-->
+
+<canvas class='container' bindtouchend="oneImg" canvas-id="myCanvas"></canvas>

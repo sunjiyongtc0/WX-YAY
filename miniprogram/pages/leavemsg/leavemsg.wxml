@@ -1,0 +1,51 @@
+<!--miniprogram/pages/leavemsg/leavemsg.wxml-->
+<view class="container" style="height: 100vh;width:100vw"  >
+<view style="height: 20vh;width:100vw" >
+  <view style="color:#445D7C;height: 6vh;font-size:12px" >繁华千种，抵不过岁月流年，红颜易老，伤不起光阴似剑</view>
+  <button style="color:#445D7C;height: 6vh;font-size:8px;width:80vw"  open-type="getUserInfo" bindgetuserinfo='getUser'><text>{{title}}</text></button>
+  <!-- <van-cell-group> -->
+    <!-- <van-field
+      value="{{ insert }}"
+      label="留言"
+      placeholder="请输入留言"
+      autosize
+      border="{{ false }}"
+      bind:change="msgBlur"
+    /> -->
+    <van-cell-group>
+  <van-field
+    value="{{ insert }}"
+    label="留言"
+    type="textarea"
+    placeholder="请输入留言"
+    autosize
+    border="{{ false }}"
+    bind:change="msgBlur"
+  />
+</van-cell-group>
+    <van-button slot="button" size="small" type="primary"  bind:click="saveMsg" >提交留言</van-button>
+</view>
+<!-- <scroll-view scroll-y="true" style="height: 700vh;width:100vw" > -->
+<scroll-view scroll-y="true" style="height: 70vh;">  
+    <van-card wx:for="{{message}}" wx:for-item="index"
+        desc="{{message[index].msg}}"
+        title="{{message[index].nickName}}"
+        centered="true"
+        thumb="{{message[index].avatarUrl}}"
+      >
+      <view slot="footer"> 日期：{{message[index].date}}</view>
+      </van-card>
+      <!-- <van-cell-group >
+        <van-field
+          value="{{message[index].msg}}"
+          label="{{message[index].nickName}}"
+          left-icon="contact"
+          disabled
+          border="{{ false }}"
+        />
+      </van-cell-group> -->
+  <!-- </van-cell-group> -->
+  </scroll-view> 
+<!-- 在页面内添加对应的节点 -->
+</view>
+<van-notify id="van-notify" />

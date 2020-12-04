@@ -1,0 +1,37 @@
+<!--miniprogram/pages/times/times.wxml-->
+<view class="container">
+ <van-row >
+ <van-col span="4">
+<scroll-view scroll-y="true" style="height: 100vh;">
+  <view  > 
+    <van-sidebar active-key="{{ 0 }}" bind:change="onChange"    >
+      <block wx:for="{{year}}" wx:for-item="index"  >
+        <van-sidebar-item title="{{year[index].lable}}" />
+      </block>
+    </van-sidebar>
+  </view>  
+</scroll-view>
+</van-col>
+  <van-col span="20"  style="color:#445D7C;"  >
+   <van-row >
+      <van-col span="24">
+        <!-- <van-image width="100%" height="27vh"  fit="cover" src="cloud://yaaiya-u9ybo.7961-yaaiya-u9ybo-1302979826/times/{{yearNum}}.jpg"/>  -->
+         <van-image width="100%" height="27vh"  fit="cover" src="{{path+yearNum+'.jpg'}}"/>
+      </van-col>
+    </van-row>
+    <van-row >
+      <van-col  span="24" ><view class="fotime"  >事件：</view> <scroll-view scroll-y="true" style="height: 26vh;"> {{msg}}</scroll-view></van-col>
+    </van-row>
+    <van-row >
+      <van-col span="24" ><view class="fotime" >评论：</view> <scroll-view scroll-y="true" style="height: 26vh;"> {{summary}}</scroll-view></van-col>
+    </van-row>
+    
+   
+  </van-col>
+</van-row>
+    
+
+
+
+<van-notify id="van-notify" />
+</view>

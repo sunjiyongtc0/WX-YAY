@@ -1,0 +1,9 @@
+<!--miniprogram/pages/yiy/yiy.wxml-->
+<view class="container" >
+  <view style="width:100vw;height:50vh;text-align:center;align-items;center;line-height: 25vh;">
+    <view class="fotime" bindtap="fm" >朝花夕拾</view>
+  </view>
+  <view style="width:100vw;height:50vh;text-align:center;align-items: center;line-height: 25vh;">
+    <view class="fotime" bindtap="gt">美好时光</view>
+  </view>
+</view>

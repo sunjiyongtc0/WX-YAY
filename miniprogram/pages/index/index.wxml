@@ -1,0 +1,26 @@
+<!--index.wxml    #445D7C-->
+<van-sticky style='width:1200rpx;height: 100vh;background:#A68AC7;'>
+
+  <canvas canvas-id="canvas" style='width:1200rpx;height: 100vh;'>
+    <van-row gutter="20">
+      <van-col span="4"></van-col>
+      <van-col span="16">  <button bindtap="btnAuth"   indicator-dots="true" autoplay="true" interval="3000" duration="1000"
+                    class="userinfo-avatar banner"
+                    style="background-image: url({{avatarUrl}})"
+                    size="default"
+                    ></button></van-col>
+      <van-col span="4"></van-col>
+    </van-row>
+    <van-row gutter="10" style="margin:5vw;padding:5vw"> 
+      <van-col span="12" offset="2" ><text class="text">点击头像开启旅程</text></van-col>
+    </van-row>
+
+    <van-row gutter="20" style="margin:10vw;padding:10vw">
+      <van-col span="12" offset="2" ><text class="fo" >致我们逝去的青春；敬我们奋斗的未来</text></van-col>
+    </van-row>
+  </canvas>
+</van-sticky>
+<!-- 在页面内添加对应的节点 -->
+<van-notify id="van-notify" />
+  <!-- <van-col span="12" offset="2" ><van-button type="info"  size="small"  block open-type="getUserInfo" bindgetuserinfo='getUser'><text class="text-button" >授权登录 </text></van-button></van-col>
+       <van-col span="12" offset="2" ><text class="text">允许获取用户信息 \n (昵称、头像等)</text></van-col>  -->

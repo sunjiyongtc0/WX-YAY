@@ -1,0 +1,11 @@
+/* miniprogram/pages/yiy/yiy.wxss */
+@import "../home/home.wxss";
+.fotime {
+  align-self:center;
+  background-color:#fff;
+  border-radius:5rpx;
+  padding:2rpx;
+  font-size:45rpx;
+  color:#be6fff;
+  opacity:0.4 !important;
+}

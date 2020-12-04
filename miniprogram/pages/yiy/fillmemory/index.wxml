@@ -1,0 +1,11 @@
+<!--miniprogram/pages/yiy/fillmemory/index.wxml-->
+<view class="cooltimer">
+        <canvas canvas-id="canvas_ct" style="{{canvas_ct_style}}" class="container" >
+                <canvas canvas-id="canvas_ct1" style="width:85vw;height:85vh" id="canvas_ct1">
+                       <van-image round width="66vw" height="66vw"  fit="cover" src="{{url}}" use-loading-slot  bindload="loadImg">
+                                <van-loading slot="loading" type="spinner" size="20" vertical />
+                       </van-image>
+                </canvas>
+        </canvas>
+</view>
+

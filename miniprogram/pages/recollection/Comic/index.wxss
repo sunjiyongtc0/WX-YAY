@@ -1,0 +1,48 @@
+/* miniprogram/pages/Comic/index.wxss */
+@import "../../home/home.wxss";
+.pagebody{
+  width: 100vw;
+  height: 78vh;
+  color:#445D7C; 
+}
+.fotime {
+  background-color:#fff;
+  border-radius:5rpx;
+  padding:2rpx;
+  font-size:45rpx;
+  color:#be6fff
+}
+.van-step__title{
+  /* width: 2vw !important;   */
+  margin: 0 auto !important; 
+  line-height: 4vw !important;  
+  font-size: 8px !important;
+}
+
+.hide{
+  display: none;
+ }
+ .show{ 
+  display: block;
+ }
+ 
+.text{
+  width: 80vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fo {
+  width: 80vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  text-align:center;
+  display: flex;
+  font-size: 12;
+  color: #f4a44c;
+  border-color:#A68AC7;
+}

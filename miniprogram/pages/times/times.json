@@ -1,0 +1,14 @@
+{
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "van-divider": "@vant/weapp/divider/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-notify": "@vant/weapp/notify/index",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+    "van-sticky": "@vant/weapp/sticky/index",
+    "van-image": "@vant/weapp/image/index"
+    }
+}

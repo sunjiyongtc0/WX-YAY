@@ -1,0 +1,15 @@
+/* miniprogram/pages/leavemsg/leavemsg.wxss */
+@import "../home/home.wxss";
+.van-field__label{
+  color: #445D7C;
+  font-size: 12;
+}
+.van-card {
+  align-self:center  !important;
+  background-color:#fff !important;
+  /* border-radius:5rpx  !important; */
+  padding:2rpx  !important;
+  /* font-size:45rpx   !important; */
+  color:#be6fff !important;
+  opacity:0.8 !important;
+}

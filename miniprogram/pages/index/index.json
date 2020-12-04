@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-sticky": "@vant/weapp/sticky/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-notify": "@vant/weapp/notify/index"
+  }
+}

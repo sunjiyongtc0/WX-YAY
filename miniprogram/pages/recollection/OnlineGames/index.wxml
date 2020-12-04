@@ -1,0 +1,35 @@
+<!--miniprogram/pages/OnlineGames/index.wxml-->
+<view class="container">
+ <van-row>
+    <van-col>
+      背景音乐开关  <van-switch checked="{{ checked }}" size="3vh"  bind:change="switchstatus"/>
+    </van-col>
+  </van-row>  
+  <scroll-view scroll-y="true" style="height: 100vh;">
+  <van-collapse accordion value="{{ activeName }}" bind:change="onChange">
+    <block wx:for="{{gameList}}" wx:for-item="index"  >  
+      <van-collapse-item title="{{gameList[index].name}}" name="{{index}}">
+      <van-row>
+        <van-col>
+         {{gameList[index].ace}}
+        </van-col>
+      </van-row>  
+      <van-row>
+        <van-col>
+         <van-image
+        width="80vw"
+        height="40vh"
+        fit="cover"
+        src="{{path+gameList[index].name+'.jpg'}}"
+      />
+        </van-col>
+      </van-row> 
+     
+       
+      </van-collapse-item>
+    
+    
+    </block>
+  </van-collapse>
+  </scroll-view>
+</view>

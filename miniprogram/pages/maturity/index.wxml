@@ -1,0 +1,16 @@
+<!--miniprogram/pages/maturity/index.wxml-->
+<!-- <view class="container"> -->
+  <view class="container">
+    <view class='page_first'>点击图片翻页查看</view>
+    <view class='page_mid'>{{msg}}</view>
+    <view class='page_last'>
+        <block wx:for='{{imgArr0}}' wx:key='{{index}}'>
+            <view class="photo_item {{item.isturn?'left':'right'}} {{'zindex'+item.zIndex}}" data-index='{{index}}' bindtap='change' bindtransitionend='finish'>
+                 <image  src='{{item.src}}' mode='aspectFill'></image>  
+                 <!-- <image  src="http://yaaiya.xyz/data/images/maturity/2.jpg" mode='aspectFill'></image> -->
+            </view>
+        </block>
+    </view>
+  </view>  
+<!-- </view> -->
+

@@ -1,0 +1,24 @@
+<!--miniprogram/pages/recollection/jay/jay.wxml-->
+<view class="container" >
+<view style="width:100vw;height:50vh;text-align:center;align-items;center;line-height: 25vh;">
+<view class="fotime" bindtap="Tree" >专辑</view>
+</view>
+<view style="width:100vw;height:50vh;text-align:center;align-items: center;line-height: 25vh;">
+<view class="fotime" bindtap="Film">电影</view>
+</view>
+<!-- <van-row> -->
+      <!-- <van-col span="8" offset="6">
+            <van-button round type="info" bind:tap="Tree">专辑</van-button>
+      </van-col>
+</van-row> -->
+<!-- <van-row>
+      <van-col span="8" offset="6">
+            <van-button round type="info" bind:tap="Sunburst">金曲奖</van-button>
+      </van-col>
+ </van-row> -->
+ <!-- <van-row>
+      <van-col span="8" offset="6">
+            <van-button round type="info" bind:tap="Film">电影</van-button>
+      </van-col>
+ </van-row> -->
+</view>

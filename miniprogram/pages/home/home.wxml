@@ -1,0 +1,77 @@
+<!--miniprogram/pages/home/home.wxml-->
+<scroll-view scroll-y="true" style="width: 100%; height: 100%">
+  <!-- <view bindtouchend="touchEnd"  bindtouchstart="touchStart" class="container"> -->
+  <view  class="container"> 
+    <!-- <view class="one {{ view[0].in }} {{ view[0].out }}" style="width: 100%; height: 100%"> -->
+    <view class="one animated fadeInLeft" style="width: 100%; height: 100%">
+      <image class="one-one {{ one_one }}" src="../../images/background/12.jpg"></image>
+      <view class="one-two {{ one_two }}" bindtouchstart="Times">时代</view>
+      <view class="one-three {{ one_three }}"  bindtouchstart="Recollection">追忆</view>
+      <view class="one-four {{ one_four }}"  bindtouchstart="Maturity">流年</view>
+      <view class="one-five {{ one_five }}"  bindtouchstart="yay" >美雅</view>
+       <view class="one-six {{ one_five }}"  bindtouchstart="Leavemsg" >留言</view>
+    </view>
+    <!-- <view class="two {{ view[1].in }} {{ view[1].out }}" style="width: 100%; height: 100%"> -->
+     <view class="two animated fadeOutRight" style="width: 100%; height: 100%">
+      <image class="two-one {{ two_one }}" src="../../images/background/7.png"></image>
+      <image class="two-two {{ two_two }}" src="../../images/background/14.png"></image>
+      <image class="two-three {{ two_three }}" src="../../images/background/3.png"  bindtap="Leavemsg"></image>
+      <image class="two-four {{ two_four }}" src="../../images/background/20.png"></image>
+    </view>
+    <image class="bottom-top {{ bottom_top }}" src="../../images/background/5.png"></image>
+    <image class="bottom-one {{ bottom_one }}" src="../../images/background/1.png"></image>
+    <image class="bottom-one2 {{ bottom_one }}" src="../../images/background/1.png"></image>
+    <image class="bottom-two {{ bottom_two }}" src="../../images/background/11.png"></image>
+    <image class="bottom-two2 {{ bottom_two }}" src="../../images/background/11.png"></image>
+    <image class="bottom-three {{ bottom_three }}" src="../../images/background/12.png"></image>
+    <image class="bottom-three2 {{ bottom_three }}" src="../../images/background/12.png"></image>
+    <image class="bottom-four {{ bottom_four }}" src="../../images/background/10.png"></image>
+    <image class="bottom-four2 {{ bottom_four }}" src="../../images/background/10.png"></image>
+  </view>
+</scroll-view>
+
+
+
+
+
+
+<!-- <van-divider dashed />
+<van-row>
+  <van-col span="8" offset="6"><van-button  round  loading type="info" loading-text="时代" bind:tap ="Times"/></van-col>
+</van-row>
+<van-divider dashed />
+<van-row>
+  <van-col span="8" offset="6"><van-button  round  loading type="info" loading-text="追忆"  bind:tap="Recollection" /></van-col>
+</van-row>
+<van-divider dashed />
+<van-row>
+  <van-col span="8" offset="6"><van-button  round  loading type="info" loading-text="流年" bind:tap="Maturity"/></van-col>
+</van-row>
+<van-divider dashed />
+<van-row>
+  <van-col span="8" offset="6"><van-button  round  loading type="info" loading-text="美雅" bind:tap="yay"  /></van-col>
+</van-row>
+<van-divider dashed />
+<van-row>
+  <van-col span="8" offset="6"><van-button  round  loading type="info" loading-text="留言"  bind:tap="Leavemsg"  /></van-col>
+</van-row>
+<van-divider dashed /> -->
+<van-overlay show="{{ show }}" bind:click="onClickHide">
+  <view class="wrapper">
+    <view class="block" catch:tap="noop" >
+    <van-cell-group>
+  <van-field
+    value="{{ value }}"
+    placeholder="作者姓名首字母"
+    bindinput='expInput'
+  >
+   <van-button slot="button" size="small" type="primary" bind:click="Submit"
+      >确认</van-button
+    >
+  </van-field>
+</van-cell-group>
+    </view>
+  </view>
+</van-overlay>
+
+<van-toast id="van-toast" /> 

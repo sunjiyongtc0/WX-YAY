@@ -1,0 +1,42 @@
+/* miniprogram/pages/recollection/Rl/index.wxss */
+@import "../../home/home.wxss";
+
+.first{
+  text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 70vh;
+}
+.hide{
+  display: none;
+ }
+ .show{ 
+  display: block;
+ }
+ .van-cell {
+  background-color: #A68AC7 !important;
+  color: #445D7C !important;
+ }
+ .van-cell__label{
+  color: #fff !important;
+ }
+.buttom{
+  position:absolute;
+  top: 80%;
+  text-align:center;
+  /* display: flex; */
+   align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 20vh;
+}
+.van-button {
+  text-align:center !important;
+  width: 20vw !important;
+  height: 6vh !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align:center !important;
+}

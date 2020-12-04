@@ -1,0 +1,13 @@
+<!--miniprogram/pages/jay/film/index.wxml-->
+<view class="container" >
+<scroll-view scroll-y="true" style="height: 100vh;">
+<block wx:for="{{filmInfo}}" wx:for-item="index"  >
+
+   <van-card
+    desc="{{filmInfo[index].mark}}"
+    title="{{filmInfo[index].name}}"
+    thumb="{{ path+filmInfo[index].name+'.jpg' }}"
+  /> 
+</block>
+</scroll-view>
+</view>

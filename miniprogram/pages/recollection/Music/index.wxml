@@ -1,0 +1,20 @@
+<!--miniprogram/pages/Music/index.wxml-->
+<view class="container">
+ <van-row>
+    <van-col>
+      随机播放全部歌曲  <van-switch checked="{{ checked }}" size="3vh"  bind:change="switchstatus"/>
+    </van-col>
+  </van-row> 
+<scroll-view scroll-y="true" style="height: 100vh;">
+<van-collapse accordion value="{{ activeName }}" bind:change="onChange">
+  <block wx:for="{{musicList}}" wx:for-item="index"  >
+    <van-collapse-item title="{{musicList[index].name}}" >
+    <van-row gutter="20">
+      <van-col span="6"><van-button round  icon="play-circle-o" type="info" size="mini" bind:click="Play" custom-style="width:20vw">播放</van-button></van-col>
+      <van-col offset="6" span="6"> <van-button round  icon="pause-circle-o" type="info" size="mini" bind:click="Pause" custom-style="width:20vw">暂停</van-button></van-col>
+    </van-row>
+    </van-collapse-item>
+  </block>
+</van-collapse>
+</scroll-view >
+</view>
